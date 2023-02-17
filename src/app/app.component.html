@@ -1,10 +1,57 @@
 <div class="container">
   <div class="upper-data">
-    <!-- <img src="../assets/—Pngtree—beautiful sunrise and sunset in_1206317.jpg" *ngIf="14 > 15">
-    <img src="../assets/cold.jpg" *ngIf="14 <= 15"> -->
+    <img src="../assets/—Pngtree—beautiful sunrise and sunset in_1206317.jpg" *ngIf="14 > 15">
+    <img src="../assets/cold.jpg" *ngIf="14 <= 15">
+    <div class="weather-data">
+      <div class="location">Wellington</div>
+      <div class="temperature">{{14.40 | number: '1.0-0'}}°C</div>
+    </div>
   </div>
   <div class="lower-data">
+      <div class="more-info-label">
+        Plus d'information
+      </div>
+      <div class="more-info-container">
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/1035619.png" alt="" srcset="">
+            <span>min</span>
+          </div>
+          <div class="info-block-value">
+            10°C
+          </div>
+        </div>
 
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/index-removebg-preview.png" alt="" srcset="">
+            <span>max</span>
+          </div>
+          <div class="info-block-value">
+            20°C
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/humidity-icon-vector-24247591-removebg-preview.png" alt="" srcset="">
+            <span>humidity</span>
+          </div>
+          <div class="info-block-value">
+            77%
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">
+            <img src="../assets/db7a4470c299c4d5ad0c11d513981ce9-removebg-preview.png" alt="" srcset="">
+            <span>wind</span>
+          </div>
+          <div class="info-block-value">
+           11 km/h
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 <router-outlet></router-outlet>
